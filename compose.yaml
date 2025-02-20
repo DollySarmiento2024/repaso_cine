@@ -1,6 +1,6 @@
 services:
   db:
-    image: dollysarmiento2024/bbdd_cine:v1
+    image: dollysarmiento2024/mi_bbdd_cine:v1
     container_name: contenedor_bbdd_cine
     #environment:
     #  MYSQL_ROOT_PASSWORD: fernanda
@@ -10,7 +10,7 @@ services:
     ports:
       - "3306:3306"
   php:
-    image: dollysarmiento2024/app_cine:v1
+    image: dollysarmiento2024/mi_app_cine:v1
     container_name: contenedor_app_cine
     ports:
       - "8080:80"

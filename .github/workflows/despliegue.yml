@@ -24,14 +24,14 @@ jobs:
       # Construir y subir la imagen de la aplicación
       - name: Build and push PHP Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/bbdd_cine:v1 .
-          docker push ${{ secrets.DOCKER_USERNAME }}/bbdd_cine:v1
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/mi_bbdd_cine:v1 .
+          docker push ${{ secrets.DOCKER_USERNAME }}/mi_bbdd_cine:v1
 
       # Construir y subir la imagen de la aplicación
       - name: Build and push PHP Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/app_cine:v1 .
-          docker push ${{ secrets.DOCKER_USERNAME }}/app_cine:v1
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/mi_app_cine:v1 .
+          docker push ${{ secrets.DOCKER_USERNAME }}/mi_app_cine:v1
 
       # Transferir el archivo compose.yml al servidor remoto
       - name: Transfer compose.yml to remote server
